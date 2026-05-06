@@ -2,6 +2,8 @@
 
 AutoMind is a futuristic, intelligent productivity assistant for Android. It doesn't just block apps; it **learns** your habits, **identifies** your distraction cycles, and **autonomously** protects your time using advanced adaptive logic.
 
+[**Official Repository**](https://github.com/TopGnextdoor/AutoMind)
+
 ![AutoMind Hero](https://via.placeholder.com/1200x600/0F0F12/00D2FF?text=AutoMind+-+Intelligent+Focus)
 
 ---
