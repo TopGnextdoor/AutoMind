@@ -1,102 +1,116 @@
-# 🧠 AutoMind: Sync Your Focus
+# 🧠 AutoMind: The Intelligent Productivity Assistant
 
-AutoMind is a futuristic, intelligent productivity assistant for Android. It doesn't just block apps; it **learns** your habits, **identifies** your distraction cycles, and **autonomously** protects your time using advanced adaptive logic.
+[![GitHub license](https://img.shields.io/github/license/TopGnextdoor/AutoMind)](https://github.com/TopGnextdoor/AutoMind/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/TopGnextdoor/AutoMind)](https://github.com/TopGnextdoor/AutoMind/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/TopGnextdoor/AutoMind)](https://github.com/TopGnextdoor/AutoMind/issues)
 
-[**Official Repository**](https://github.com/TopGnextdoor/AutoMind)
+AutoMind is a cutting-edge, AI-powered productivity engine for Android designed to reclaim your time. Unlike traditional app blockers, AutoMind **learns your behavior**, **predicts distraction patterns**, and **autonomously intervenes** to keep you in the zone.
 
-![AutoMind Hero](https://via.placeholder.com/1200x600/0F0F12/00D2FF?text=AutoMind+-+Intelligent+Focus)
+[**Explore the Repository »**](https://github.com/TopGnextdoor/AutoMind)
 
 ---
 
-## 🚀 Key Features
+## 🌟 Vision
+In an era of infinite scrolls and notifications, AutoMind acts as a digital guardian. It doesn't just restrict; it **educates** and **adapts** to your personal focus journey.
 
-### 🤖 Autopilot Mode
-The heart of AutoMind. Autopilot takes control of your device's strictness based on your **Discipline Score**.
-- **Adaptive Strictness**: As your focus improves, the system relaxes. If you slip up, it enters "Aggressive Mode" to force-block distractions.
-- **Dynamic Blocking**: Automatically detects and blocks distracting apps during your personalized "Danger Zones," even without manual rules.
+---
 
-### 📊 Advanced Analytics & Insights
-Transform your usage data into actionable intelligence with high-fidelity, animated visualizations.
-- **Focus Score**: A real-time metric of your digital discipline.
-- **Usage Heatmaps**: Visualize your activity distribution across 24 hours.
-- **Top Distractions**: Identify exactly which apps are stealing your time.
-- **Danger Zones**: AI-detected hours where you are most vulnerable to distractions.
+## 🚀 Game-Changing Features
 
-### 💡 Smart Suggestions
-AutoMind analyzes your usage patterns in the background to suggest new focus rules.
-- **Habit Detection**: "You use Instagram daily at 11 PM. Add a focus rule?"
-- **One-Tap Acceptance**: Convert habits into automation rules instantly.
+### 🤖 Autopilot Mode (AI Enforcement)
+*   **Adaptive Discipline Score**: The app monitors your focus consistency. A higher score means more trust; a lower score triggers **Aggressive Mode**.
+*   **Context-Aware Blocking**: Autopilot automatically restricts apps during your "Danger Zones" (hours when you're most likely to procrastinate).
+*   **Dynamic Rule Adjustment**: No more manual setup. The system adjusts its strictness based on your real-time behavior.
 
-### ☁️ Cloud Sync & Privacy
-- **Firebase Integration**: Sync your rules and preferences across all your devices securely.
-- **Offline-First**: AutoMind works perfectly without an internet connection, syncing only when you're back online.
-- **Privacy-First**: All granular usage monitoring stays on your device.
+### 📊 Advanced Analytics & Visualization
+*   **High-Fidelity Charts**: Custom Canvas-based visualizations for daily usage patterns.
+*   **Focus Heatmaps**: Identify your peak productivity windows and distraction triggers.
+*   **Top Distractions breakdown**: Precise data on where your minutes go.
+*   **Weekly Trend Tracking**: Visualize your improvement over time with smooth, animated line graphs.
+
+### 💡 Smart Suggestion Engine
+*   **Habit Learning**: AutoMind identifies recurring distractions.
+*   **Actionable Cards**: Get suggestions like *"You spend 40 mins on YouTube every Tuesday at 10 PM. Create a focus rule?"*
+*   **One-Tap Automation**: Turn insights into rules with a single click.
+
+### ☁️ Seamless Cloud Architecture
+*   **Real-time Firebase Sync**: Your rules and preferences are synced across all your Android devices.
+*   **Offline-First Stability**: Local Room database ensures the app works perfectly in the mountains or in the subway.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **UI**: [Jetpack Compose](https://developer.android.com/jetpack/compose) with Material 3 & Custom Canvas Visualizations.
-- **Architecture**: MVVM with Clean Architecture principles.
-- **Local Database**: [Room](https://developer.android.com/training/data-storage/room) for usage history and rules.
-- **Preferences**: [Jetpack DataStore](https://developer.android.com/topic/libraries/architecture/datastore) for reactive settings.
-- **Backend**: Firebase Auth & Firestore.
-- **Concurrency**: Kotlin Coroutines & Flow.
-
----
-
-## 📦 Project Structure
-
-```text
-com.automind/
-├── data/           # Repository pattern & Local/Remote data sources
-│   ├── local/      # Room DB, DAOs, DataStore
-│   ├── remote/     # Firestore integration
-│   └── model/      # Unified data entities
-├── logic/          # The "Brain" (Engines, Analyzers, Trackers)
-│   ├── AutopilotManager.kt
-│   ├── AnalyticsEngine.kt
-│   └── SuggestionEngine.kt
-├── ui/             # Modern, futuristic Compose UI
-│   ├── screens/    # Dashboard, Autopilot, Insights, etc.
-│   ├── components/ # Reusable Glassy components & Charts
-│   └── theme/      # Dark-mode first design system
-└── service/        # Background focus monitoring
-```
+| Layer | Technology |
+|---|---|
+| **UI Framework** | [Jetpack Compose](https://developer.android.com/jetpack/compose) (Material 3) |
+| **Logic Engine** | Kotlin Coroutines & Flow |
+| **Local Storage** | Room Database & Jetpack DataStore |
+| **Cloud Backend** | Firebase Auth & Cloud Firestore |
+| **Design System** | Futuristic Cyber-Punk / Glassmorphism |
+| **Monitoring** | UsageStatsManager & Foreground Services |
 
 ---
 
 ## 🚦 Getting Started
 
-### Prerequisites
-- Android Studio Iguana or newer.
-- A Firebase project (add `google-services.json` to the `app/` folder).
+### 📋 Prerequisites
+*   Android 8.0 (API level 26) or higher.
+*   Android Studio Ladybug or newer.
+*   A valid `google-services.json` file in the `app/` directory.
 
-### Permissions
-AutoMind requires two critical permissions to function:
-1. **Usage Access**: To monitor which apps are currently in the foreground.
-2. **System Overlay**: To show focus warnings and blocking screens.
+### 🔑 Critical Permissions
+To function effectively, AutoMind requires:
+1.  **Usage Access**: To detect which apps are currently active.
+2.  **Display Over Other Apps**: To show focus overlays and hard-blocks.
+3.  **Notification Access**: For smart interventions.
 
-### Installation
-1. Clone the repository.
-2. Build the project in Android Studio.
-3. Grant permissions via the guided onboarding flow.
+### 🔨 Installation
+1.  **Clone the Repo**:
+    ```bash
+    git clone https://github.com/TopGnextdoor/AutoMind.git
+    ```
+2.  **Firebase Setup**: Add your `google-services.json` to the `app/` folder.
+3.  **Build & Run**: Use Android Studio to deploy to your physical device.
 
 ---
 
-## 🎨 Design Philosophy
-AutoMind features a **Futuristic Dark-Mode** aesthetic inspired by cyber-punk and glassmorphism.
-- **Primary Color**: `#00D2FF` (Electric Blue)
-- **Secondary Color**: `#9D50BB` (Vivid Purple)
-- **Background**: `#0F0F12` (Deep Space)
+## 🎨 Design System
+AutoMind uses a curated, high-contrast palette designed for focus and premium feel:
+*   **Deep Space Background**: `#0F0F12`
+*   **Electric Blue (Primary)**: `#00D2FF`
+*   **Vivid Purple (Secondary)**: `#9D50BB`
+*   **Glassy Surfaces**: Semi-transparent layers with 16dp-24dp corner radii.
 
 ---
 
 ## 🛡 Stability & Performance
-- **Smart Sleep**: Monitoring pauses when the screen is off to conserve battery.
-- **Thread Safety**: All I/O operations are offloaded to `Dispatchers.IO` using Coroutines.
-- **Error Resilient**: Robust `try-catch` wrapping for all database and network operations.
+*   **Smart Sleep**: Background polling stops when the screen is off to maximize battery life.
+*   **Crash-Resilient**: Global error handling ensures no data loss during sync issues.
+*   **Lightweight**: Optimized to use minimal RAM even during deep pattern analysis.
 
 ---
 
-Developed with ❤️ by the AutoMind Team.
+## 🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 📮 Contact
+**Divvyansh Kudesia** - [GitHub](https://github.com/TopGnextdoor)
+
+Project Link: [https://github.com/TopGnextdoor/AutoMind](https://github.com/TopGnextdoor/AutoMind)
+
+---
+Developed with 💙 for the productivity community.
