@@ -1,8 +1,8 @@
 # 🧠 AutoMind: The Intelligent Productivity Assistant
 
-<img width="1693" height="929" alt="image" src="https://github.com/user-attachments/assets/256da19c-f3c9-4930-9ba9-002d86858848" />
-
 AutoMind is a cutting-edge, AI-powered productivity engine for Android designed to reclaim your time. Unlike traditional app blockers, AutoMind **learns your behavior**, **predicts distraction patterns**, and **autonomously intervenes** to keep you in the zone.
+
+<img width="1693" height="929" alt="image" src="https://github.com/user-attachments/assets/e6d97dad-a55e-4352-b720-6ef65f69b9b4" />
 
 [**Explore the Repository »**](https://github.com/TopGnextdoor/AutoMind)
 
